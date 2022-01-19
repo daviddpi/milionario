@@ -1,0 +1,66 @@
+[
+    {
+        "domanda": "Chi ha scritto il Decameron?",
+        "risposte": ["Dante Alighieri", "Giacomo Leopardi", "Ugo Foscolo", "Giovanni Boccaccio"],
+        "esatta": "Giovanni Boccaccio",
+        "premio": "500"
+    },
+
+    {
+        "domanda": "Quanti regioni ci sono in Italia?",
+        "risposte": ["20", "21", "19", "22"],
+        "esatta": "20",
+        "premio": "10.000"
+    },
+
+    {
+        "domanda": "Quanti occhi ha un lombrico?",
+        "risposte": ["1", "4", "2", "Nessuno"],
+        "esatta": "Nessuno",
+        "premio": "75.000"
+    },
+
+    {
+        "domanda": "Qual è l'isola più grande del mondo?",
+        "risposte": ["Nuova Guinea", "Madagascar", "Sicilia", "Groenlandia"],
+        "esatta": "Groenlandia",
+        "premio": "150.000"
+    },
+
+    {
+        "domanda": "Quanto è alto il David di Michelangelo?",
+        "risposte": ["5 metri", "3 metri", "7 metri", "4 metri"],
+        "esatta": "5 metri",
+        "premio": "300.000"
+    },
+
+    {
+        "domanda": "Come si chiama l'opera letteraria più famosa di Charles Dickens?",
+        "risposte": ["Oliver Twist", "Il Circolo Pickwick", "Canto di Natale", "Il mistero di Edwin Drood"],
+        "esatta": "Oliver Twist",
+        "premio": "500.000"
+    },
+
+    {
+        "domanda": "Chi nella storia è stata premiata per tre volte con il Premio Nobel per la Pace?",
+        "risposte": ["Croce Rossa", "Ufficio internazionale Nansen per i rifugiati", "Organizzazione internazionale del lavoro", "Alto commissariato delle Nazioni Unite per i rifugiati"],
+        "esatta": "Croce Rossa",
+        "premio": "700.000"
+    },
+
+    {
+        "domanda": "In che anno è uscito l'ultimo episodio della serie 'The Office'? ",
+        "risposte": ["2013", "2012", "2010", "2015"],
+        "esatta": "2013",
+        "premio": "850.000"
+    },
+
+    {
+        "domanda": "Quanti sono i fantasmini di Pacman?",
+        "risposte": ["4", "3", "Dipende dal livello", "5"],
+        "esatta": "4",
+        "premio": "1.000.000"
+    }
+
+
+]
