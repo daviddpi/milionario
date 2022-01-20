@@ -22,7 +22,7 @@
       
       <div v-if="showAward" class="award d-none d-sm-none d-md-block">
         <div v-for="item in quiz.slice().reverse()" :key="item">
-          <h5>Premio: {{item.premio}}&euro;</h5>
+          <h6>Premio: {{item.premio}}&euro;</h6>
         </div>
       </div>
         
@@ -60,7 +60,7 @@
               <div class="col-12 mb-3">
                   <Question :question="quiz" :index="index" clasS="flicker-in-1"></Question> 
               </div>
-              <div v-for="n in 4" :key="n" class="col-md-6 col-12 g-4">
+              <div v-for="n in 4" :key="n" class="col-md-6 col-12 g-4 pb-3">
                   <Answer :answer="quiz" :n="n - 1" :quizLength="quizLength" :index="index" :once="once" :endGame="endGame" :winGame="winGame" @increment-index="incrementIndex"
                   @change-once="changeOnce" @verify-win="verifyWin" class="flicker-in-1"></Answer> 
               </div>
@@ -160,8 +160,8 @@ export default {
         },
 
         startGame(){
-            // let song = document.getElementById("myAudio");
-            // song.play();
+            let song = document.getElementById("myAudio");
+            song.play();
             this.pressPlay = false;
             this.endGame = false;
             this.winGame = '';
@@ -408,12 +408,12 @@ img{
 
 .award{
   position: absolute;
-  right: 5%;
+  right: 2%;
   top: 5%;
   background-color: rgba($color: #000000, $alpha: .75);
   width: max-content;
   height: max-content;
-  padding: 40px;
+  padding: 30px;
   color: white;
   border-radius: 20px;
   animation: tilt-in-tr 0.65s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
