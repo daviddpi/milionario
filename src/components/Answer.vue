@@ -146,11 +146,15 @@ export default {
 
     .rectangle{
         min-height: 90px;
-        width: 65%;
-        padding: 20px;
+        min-width: 70%;
+        padding: 15px;
 
         &:hover{
             color: white;
+        }
+
+        h3{
+            font-size: 1.3rem;
         }
     }
 
