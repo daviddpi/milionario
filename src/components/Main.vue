@@ -39,7 +39,7 @@
       
 
       <div class="container">
-          <div class="row" v-if="pressPlay">
+          <div class="row pb-5" v-if="pressPlay">
               <div class="col-12">
                   <div class="start-animation">
                       <div id="logo">
@@ -58,7 +58,7 @@
                   </div>
               </div>
               <div class="col-12 mb-3">
-                  <Question :question="quiz" :index="index" clasS="flicker-in-1"></Question> 
+                  <Question :question="quiz" :index="index" class="flicker-in-1"></Question> 
               </div>
               <div v-for="n in 4" :key="n" class="col-md-6 col-12 g-4 pb-3">
                   <Answer :answer="quiz" :n="n - 1" :quizLength="quizLength" :index="index" :once="once" :endGame="endGame" :winGame="winGame" @increment-index="incrementIndex"
@@ -148,7 +148,7 @@ export default {
         verifyWin(show){
           this.endGame = show.endGame;
           this.winGame = show.winGame;
-          console.log(show.endGame, show.winGame)
+          // console.log(show.endGame, show.winGame)
         },
         
         shuffle(a) {
@@ -447,7 +447,7 @@ img{
 
 @keyframes tilt-in-tr-2 {
   0% {
-    transform: rotateY(-35deg) rotateX(20deg) skew(-12deg, -15deg) translate(0,-100%);
+    transform: rotateY(-35deg) rotateX(20deg) skew(-12deg, -15deg) translate(0%, 100%);
     opacity: 0;
   }
   100% {

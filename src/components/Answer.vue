@@ -33,9 +33,9 @@ export default {
 
         verifyAnswer(){
             let risposta = this.answer[this.index].risposte[this.n]
-            this.isClicked = 'bg-clicked'
 
             if(this.once == false){
+                this.isClicked = 'bg-clicked'
                 this.active = true;
                 this.once = true;
                 this.$emit("change-once", this.once);
@@ -49,10 +49,13 @@ export default {
                         this.active = true;
                         
                         if( (this.index + 1) == this.quizLength){
+                            this.isClicked = '',
+                            this.active = false;
+
+
                             setTimeout( () => {
                                 this.endGame = true;
                                 this.winGame = true;
-                                this.isClicked = '',
                                 this.$emit('verify-win', {endGame: this.endGame, winGame: this.winGame })
                             }, 700)
                         }
@@ -136,6 +139,21 @@ export default {
     50% {
         background-color: rgba(218, 165, 32, 0);
     }
+}
+
+@media screen and (max-width: 576px){
+
+
+    .rectangle{
+        min-height: 90px;
+        width: 65%;
+        padding: 20px;
+
+        &:hover{
+            color: white;
+        }
+    }
+
 }
 
 </style>
