@@ -413,7 +413,7 @@ img{
   background-color: rgba($color: #000000, $alpha: .75);
   width: max-content;
   height: max-content;
-  padding: 30px;
+  padding: 25px;
   color: white;
   border-radius: 20px;
   animation: tilt-in-tr 0.65s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
