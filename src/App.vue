@@ -23,6 +23,8 @@ export default {
 body{
   background: rgb(23,1,80);
   background: linear-gradient(90deg, rgba(23,1,80,1) 0%, rgba(76,0,88,1) 51%, rgba(20,0,70,1) 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
   max-height: 100vh;
 }
 
