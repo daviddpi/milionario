@@ -49,9 +49,6 @@ export default {
                         this.active = true;
                         
                         if( (this.index + 1) == this.quizLength){
-                            this.isClicked = '',
-                            this.active = false;
-
 
                             setTimeout( () => {
                                 this.endGame = true;
@@ -112,7 +109,7 @@ export default {
     align-items: center;
     width: 70%;
     height: 80px;
-    padding: 20px;
+    padding: 15px;
     transition: all 0.3s ease;
     color: white;
     border-radius: 20px;
@@ -155,6 +152,30 @@ export default {
 
         h3{
             font-size: 1.3rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 768px){
+
+
+    .rectangle{
+
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+
+}
+
+@media screen and (min-width: 995px){
+
+
+    .rectangle{
+
+        h3{
+            font-size: 1.4rem;
         }
     }
 

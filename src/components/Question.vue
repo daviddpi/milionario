@@ -68,19 +68,8 @@ export default {
 
 @media screen and (max-width: 576px){
 
-    #sx-rect{
-        display: none;
-    }
-
-    #dx-rect{
-        display: none;
-    }
-
     .rectangle{
-        min-height: 150px;
-        width: 100vw;
-        background-color: rgba($color: #000000, $alpha: 0.5);
-        border-color: white;
+        width: 65%;
     }
 
 }
